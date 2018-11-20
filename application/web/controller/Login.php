@@ -4,7 +4,6 @@ namespace app\web\controller;
 
 use app\web\business\WebLoginManage;
 use think\Controller;
-use think\facade\Request;
 
 Class Login extends  Controller
 {
