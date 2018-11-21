@@ -21,7 +21,7 @@ Class Login extends  Controller
         $mobile   = $this->request->param('mobile');
         $prophone = $this->request->param('prophone');
         $userobj  = new  WebLoginManage();
-        $data     = $userobj->webLoginManage();
-        dump($data);
+        $result   = $userobj->sendMobileMsg($mobile,$prophone);
+        $this->ajaxReturn($result);
     }
 }

@@ -143,4 +143,12 @@ return [
     // 异常处理handle类 留空使用 \think\exception\Handle
     'exception_handle'       => '',
 
+    // +----------------------------------------------------------------------
+    // | 第三方参数设置
+    // +----------------------------------------------------------------------
+
+    //腾讯云SMS短信接口 AppID
+    'tencentSmsAppid'        => Env::get('tencentSmsAppid'),
+    'tencentSmsAppkey'       => Env::get('tencentSmsAppkey'),
+    'tencentSmsSign'         => Env::get('tencentSmsSign'),
 ];
