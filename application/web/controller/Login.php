@@ -21,7 +21,10 @@ Class Login extends  Controller
         $mobile   = $this->request->param('mobile');
         $prophone = $this->request->param('prophone');
         $userobj  = new  WebLoginManage();
-        $result   = $userobj->sendMobileMsg($mobile,$prophone);
+        //腾讯SMS发送短信
+        $result   = $userobj->sendTencentMobileMsg($mobile,$prophone);
+        //阿里云SMS发送短信
+        $result   = $userobj->sendAliyunMobileMsg($mobile,$prophone);
         $this->ajaxReturn($result);
     }
 }

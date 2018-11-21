@@ -147,8 +147,14 @@ return [
     // | 第三方参数设置
     // +----------------------------------------------------------------------
 
-    //腾讯云SMS短信接口 AppID
+    //腾讯云SMS短信接口 参数
     'tencentSmsAppid'        => Env::get('tencentSmsAppid'),
     'tencentSmsAppkey'       => Env::get('tencentSmsAppkey'),
     'tencentSmsSign'         => Env::get('tencentSmsSign'),
+
+    //阿里云SMS短信接口 参数
+    'aliyunaccessKeyId'      => Env::get('aliyunaccessKeyId'),
+    'aliyunaccessKeySecret'  => Env::get('aliyunaccessKeySecret'),
+    'aliyunSignName'         => Env::get('aliyunSingName'),
+    'aliyunTemplateCode'     => Env::get('aliyunTemplateCode'),
 ];
