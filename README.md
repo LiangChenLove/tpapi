@@ -4,11 +4,11 @@ ThinkPHP 5.1（LTS版本） —— 12载初心，你值得信赖的PHP框架
 ## 在线手册
 
 + [完全开发手册](https://www.kancloud.cn/manual/thinkphp5_1/content)
-+ [升级指导](https://www.kancloud.cn/manual/thinkphp5_1/354155) 
++ [升级指导](https://www.kancloud.cn/manual/thinkphp5_1/354155)
 
 ## 目录结构
 
-初始的目录结构如下：
+项目终极目录结构如下：
 
 ~~~
 www  WEB部署目录（或者子目录）
