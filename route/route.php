@@ -10,5 +10,7 @@
 // +----------------------------------------------------------------------
 
     Route::get('/','index/Index/index');
-    Route::post('web/login','web/Login/sendMobileMsg');
-
+    //发送短信接口
+    Route::post('sendMsg','web/Login/sendMobileMsg');
+    //发送邮件接口
+    

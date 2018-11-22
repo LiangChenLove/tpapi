@@ -6,7 +6,7 @@ use tencentMessage;
 use aliyunMessage;
 use think\facade\Log;
 
-Class WebLoginManage
+Class LoginManage
 {
     protected $foo;
     protected $str;
