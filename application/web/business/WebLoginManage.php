@@ -17,7 +17,14 @@ Class WebLoginManage
       //定义空字符串
       $this->str = '';
     }
-
+    /**
+     * 登陆发送腾讯短信
+     * @Author laravelchen
+     * @DateTime 2018-11-22
+     * @param    [string]     mobile    必填手机号
+     * @param    [string]     prophone  选填区域号
+     * @return   array();
+     */
     public function sendTencentMobileMsg($mobile,$prophone)
     {
        //这里应该用validate去验证的
@@ -45,7 +52,14 @@ Class WebLoginManage
          }
        }
     }
-
+    /**
+     * 登陆发送阿里云短信
+     * @Author laravelchen
+     * @DateTime 2018-11-22
+     * @param    [string]     mobile    必填手机号
+     * @param    [string]     prophone  选填区域号
+     * @return   array()
+     */
     public function sendAliyunMobileMsg($mobile,$prophone)
     {
       if(empty($mobile))
