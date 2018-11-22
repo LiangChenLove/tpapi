@@ -2,6 +2,7 @@
 namespace app\web\controller;
 
 use app\web\business\LoginManage;
+use app\web\business\EmailManage;
 use think\Controller;
 
 Class Login extends  Controller
@@ -26,4 +27,21 @@ Class Login extends  Controller
         $result   = $userobj->sendAliyunMobileMsg($mobile,$prophone);
         $this->ajaxReturn($result);
     }
+    /**
+     * 登陆发送邮件
+     * @Author laravelchen
+     * @DateTime 2018-11-22
+     * @param    [string]     email    必填邮箱
+     * @return   array();
+     * URL:/email/
+     */
+     public function sendEmailMsg()
+     {
+       $email   = $this->request->param('email');
+       $name    = $this->request->param('name');
+       $subject = $this->request->param('subject');
+       $emailOjb = new EmailManage;
+       $result   = $emailOjb->sendEmailMsg($email,$name,$subject);
+       $this->ajaxReturn($result);
+     }
 }

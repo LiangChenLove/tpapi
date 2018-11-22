@@ -157,4 +157,10 @@ return [
     'aliyunaccessKeySecret'  => Env::get('aliyunaccessKeySecret'),
     'aliyunSignName'         => Env::get('aliyunSingName'),
     'aliyunTemplateCode'     => Env::get('aliyunTemplateCode'),
+
+    //网易163邮箱邮件接口 参数
+    'smtp163username'        => Env::get('smtp163username'),
+    'smtp163password'        => Env::get('smtp163password'),
+    'smtp163fromname'        => Env::get('smtp163fromname'),
+
 ];

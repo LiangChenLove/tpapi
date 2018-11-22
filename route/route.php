@@ -11,6 +11,6 @@
 
     Route::get('/','index/Index/index');
     //发送短信接口
-    Route::post('sendMsg','web/Login/sendMobileMsg');
+    Route::post('sendMobile','web/Login/sendMobileMsg');
     //发送邮件接口
-    
+    Route::post('sendEmail','web/Login/sendEmailMsg');
