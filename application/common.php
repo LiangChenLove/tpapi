@@ -49,3 +49,22 @@
       }
       return $obj;
   }
+  /*
+  * 过滤查询条件里的空值
+  * @param $inArray 查询的字段
+  */
+
+  function where_filter($arr,$inArray = [])
+  {
+    foreach($arr as $k => $v)
+    {
+      if($v === '' || $v === null)
+      {
+          unset($arr[$k]);
+      }else if($inArray && !in_array($k,$inArray))
+      {
+          unset($arr[$k]);
+      }
+    }
+    return $arr ? $arr : [];
+  }

@@ -14,3 +14,5 @@
     Route::post('sendMobile','web/Login/sendMobileMsg');
     //发送邮件接口
     Route::post('sendEmail','web/Login/sendEmailMsg');
+    //所有角色用户登录接口
+    Route::post('login','index/Login/login');
